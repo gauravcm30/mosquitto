@@ -89,6 +89,19 @@ gem install mosquitto
 
 The extension checks for libmosquitto presence as well as a 1.3.1 version.
 
+### Ubuntu
+
+Now we can go ahead and install Mosquitto proper. There are three packages:
+
+mosquitto is the MQTT broker (i.e. server)
+mosquitto-clients are the command-line clients, which I recommend you install
+python-mosquitto are the Python bindings, which I also think you should install
+all three packages together require about only 665Kb of space, which we can easily afford even on the tiny Pi.
+
+``` sh
+sudo apt-get install mosquitto mosquitto-clients python-mosquitto
+```
+
 ## Usage
 
 ### Threaded loop
